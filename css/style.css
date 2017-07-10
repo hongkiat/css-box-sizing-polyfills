@@ -1,0 +1,38 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.demo-wrapper {
+	margin: 30px auto;
+	width: 500px;
+}
+.col {
+	color: #fff;
+	float: left;
+	font-family: Arial;
+	font-weight: bold;
+	height: 110px;
+	line-height: 85px;
+	text-align: center;
+	width: 50%;
+	padding: 0 10px;
+}
+
+.with-box-sizing .col.first {
+	background-color: #c0392b;
+}
+.with-box-sizing .col.second {
+	background-color: #e74c3c;	
+}
